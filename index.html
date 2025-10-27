@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StayEZ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <!-- Menu Kiri -->
+    <nav class="nav-left">
+      <a href="#hero">Beranda</a>
+       <a href="#tentang">Tentang Kami</a>
+      <a href="#kamar">Kamar</a>
+    </nav>
+
+    <!-- Logo Tengah -->
+    <div class="logo"><img src="" alt="">StayEZ✨</div>
+
+    <!-- Menu Kanan -->
+    <nav class="nav-right">
+      <a href="#fasilitas">Fasilitas</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+      <i class="bi bi-list"></i>
+    </div>
+  </header>
+
+  <!-- Menu responsif (mobile) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero">Beranda</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#kamar">Kamar</a>
+    <a href="#fasilitas">Fasilitas</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#contact">Kontak</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="img/Luxury Hotel Video Reel 2023.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video HTML5.
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-logo-container">
+      <h1>StayEZ✨</h1>
+     <!-- <img src="" alt="Logo Hotel" class="hero-logo" background="transparant">-->
+      <h1 class="hotel-name">HOTEL & RESSORT</h1>
+      <p class="hotel-tagline">Pengalaman menginap bintang lima</p>
+    </div>
+  </section>
+
+   <!-- SCROLLING TEXT -->
+  <div class="scrolling-bar">
+    <div class="scrolling-left">KETAPANG</div>
+    <div class="scrolling-center">
+      <div class="scrolling-text">
+        🌟 Promo Oktober: Diskon 25% untuk Deluxe Room • Nikmati pengalaman menginap terbaik di Hotel Nirwana • Booking sekarang sebelum kehabisan!
+      </div>
+    </div>
+    <div class="scrolling-right" id="tanggal"></div>
+  </div>
+
+  <!-- ======= TENTANG KAMI ======= -->
+<section class="about-hotel" id="tentang" >
+</div>
+  <h2 class="about-hotel-title" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">TENTANG KAMI</h2>
+  <div class="about-hotel-container">
+
+    <!-- Fasilitas -->
+    <div class="about-hotel-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="about-hotel-icon">
+        <i class="bi bi-building"></i>
+      </div>
+      <h3>Fasilitas Lengkap</h3>
+      <p>
+        Hotel Luxe menawarkan berbagai fasilitas mewah mulai dari kolam renang infinity, spa, restoran fine dining, hingga ruang pertemuan eksklusif untuk kenyamanan Anda.
+      </p>
+    </div>
+
+    <!-- Harga -->
+    <div class="about-hotel-item" data-aos="fade-up"data-aos-anchor-placement="top-bottom">
+      <div class="about-hotel-icon">
+        <i class="bi bi-cash-stack"></i>
+      </div>
+      <h3>Harga Terjangkau</h3>
+      <p>
+        Nikmati pengalaman menginap bintang lima dengan harga yang kompetitif. Kami menyediakan berbagai pilihan kamar dan paket sesuai kebutuhan Anda.
+      </p>
+    </div>
+
+    <!-- Kualitas -->
+    <div class="about-hotel-item" data-aos="fade-up"data-aos-anchor-placement="top-bottom">
+      <div class="about-hotel-icon">
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <h3>Kualitas Premium</h3>
+      <p>
+        Kami mengutamakan kenyamanan dan pelayanan terbaik dengan standar internasional untuk memberikan pengalaman menginap yang tak terlupakan.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- ======= KAMAR ======= -->
+<section id="kamar" class="rooms-section">
+  <div class="section-header" data-aos="fade-up">
+    <h2>Kamar Hotel</h2>
+    <p>Pilihan kamar nyaman dan elegan untuk pengalaman menginap terbaik Anda.</p>
+  </div>
+<div class="room-cards">
+  <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+    <img src="img/deluxe.png" alt="Superior Room">
+    <div class="room-info">
+      <h3>Superior Room</h3>
+      <p>Mulai dari <strong>Rp 550.000 / malam</strong></p>
+      <ul>
+        <li>🛏 1 Queen Bed</li>
+        <li>🌐 WiFi Gratis</li>
+        <li>🍽 Sarapan Termasuk</li>
+      </ul>
+      <button class="btn-book" onclick="pesanKamar('Superior Room', '550000')">Pesan Sekarang</button>
+    </div>
+  </div>
+
+  <div class="room-card" data-aos="fade-up" data-aos-delay="400">
+    <img src="img/kamar deluxe KING.png" alt="Deluxe Room">
+    <div class="room-info">
+      <h3>Deluxe Room</h3>
+      <p>Mulai dari <strong>Rp 850.000 / malam</strong></p>
+      <ul>
+        <li>🛏 1 King Bed</li>
+        <li>🌐 WiFi Super Cepat</li>
+        <li>🏞 Balkon Pribadi</li>
+      </ul>
+      <button class="btn-book" onclick="pesanKamar('Deluxe Room', '850000')">Pesan Sekarang</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======= Fasilitas Section ======= -->
+<section id="fasilitas" class="fasilitas" data-aos="fade-up" data-aos-delay="200">
+  <div class="container">
+    <h2 class="section-title">Fasilitas StayEz</h2>
+    <p class="section-subtitle">Nikmati berbagai fasilitas modern untuk kenyamanan dan pengalaman menginap terbaik.</p>
+
+    <div class="fasilitas-grid">
+      <div class="fasilitas-item">
+        <i class="bi bi-wifi"></i>
+        <h3>Wi-Fi Gratis</h3>
+        <p>Akses internet cepat di seluruh area hotel tanpa biaya tambahan.</p>
+      </div>
+      <div class="fasilitas-item">
+        <i class="bi bi-cup-hot"></i>
+        <h3>Restoran & Kafe</h3>
+        <p>Nikmati hidangan lezat dan minuman hangat setiap saat.</p>
+      </div>
+      <div class="fasilitas-item">
+        <i class="bi bi-p-square"></i>
+        <h3>Parkir Luas</h3>
+        <p>Area parkir aman dan nyaman untuk kendaraan tamu.</p>
+      </div>
+      <div class="fasilitas-item">
+        <i class="bi bi-person-bounding-box"></i>
+        <h3>Resepsionis 24 Jam</h3>
+        <p>Staf kami siap membantu Anda kapan saja.</p>
+      </div>
+      <div class="fasilitas-item">
+        <i class="bi bi-water"></i>
+        <h3>Kolam Renang</h3>
+        <p>Rasakan kesegaran dan relaksasi di kolam renang outdoor kami.</p>
+      </div>
+      <div class="fasilitas-item">
+        <i class="bi bi-bag-check"></i>
+        <h3>Laundry</h3>
+        <p>Layanan cuci dan setrika untuk kenyamanan Anda selama menginap.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Galeri Section ======= -->
+<section id="galeri" class="galeri" data-aos="fade-up" data-aos-delay="200">
+  <div class="container">
+    <h2 class="section-title">Galeri StayEz</h2>
+    <p class="section-subtitle">Jelajahi keindahan dan kenyamanan StayEz melalui galeri foto pilihan kami.</p>
+
+    <div class="galeri-grid">
+      <div class="galeri-item">
+        <img src="https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90ZWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=400" alt="Lobby Hotel">
+      </div>
+      <div class="galeri-item">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Kamar Deluxe">
+      </div>
+      <div class="galeri-item">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Kolam Renang">
+      </div>
+      <div class="galeri-item">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Restoran Hotel">
+      </div>
+      <div class="galeri-item">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Taman Hotel">
+      </div>
+      <div class="galeri-item">
+        <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?auto=format&fit=crop&w=800&q=80" alt="Area Santai">
+      </div>
+      <div class="galeri-item">
+        <img src="img/lobby.png" alt="Area Santai">
+      </div>
+      <div class="galeri-item">
+        <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=400" alt="Area Santai">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Kontak Section ======= -->
+<!-- KONTAK -->
+<section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="200">
+  <div class="contact-container">
+    <!-- Informasi Kontak -->
+    <div class="contact-info">
+      <h2>Hubungi Kami</h2>
+      <p>Untuk reservasi dan informasi lebih lanjut, hubungi kami melalui kontak atau media sosial berikut:</p>
+
+      <ul>
+        <li><i class="bi bi-geo-alt"></i> Jl. Merdeka No. 45, Ketapang</li>
+        <li><i class="bi bi-telephone"></i> (0534) 123456</li>
+        <li><i class="bi bi-whatsapp"></i> 0896-7711-4804</li>
+        <li><i class="bi bi-clock"></i> Senin - Minggu | 07.00 - 22.00</li>
+      </ul>
+
+      <!-- Sosial Media -->
+      <div class="contact-social">
+        <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+
+    <!-- Map Lokasi -->
+    <div class="contact-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.0646485661883!2d110.619!3d-2.998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwNTknNTMuOCJTIDExMMKwMzcnMDguNCJF!5e0!3m2!1sid!2sid!4v1234567890" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>StayEz Hotel</h3>
+      <p>Nikmati kenyamanan dan pengalaman menginap tak terlupakan di StayEz. Terletak strategis dan dilengkapi fasilitas modern.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#fasilitas">Fasilitas</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <ul>
+        <li><i class="bi bi-geo-alt"></i> Jl. Merdeka No. 45, Ketapang</li>
+        <li><i class="bi bi-telephone"></i> (0534) 123456</li>
+        <li><i class="bi bi-envelope"></i> stayezhotel@gmail.com</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Ikuti Kami</h4>
+      <div class="social-links">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 StayEz Hotel. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Tombol Dark Mode -->
+<button id="darkModeToggle" class="dark-mode-btn">
+  <i class="bi bi-moon"></i>
+</button>
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>
